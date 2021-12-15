@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="pageTitle">Programmer's Class</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="pgci.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+
+    <body>
+
+
+        <script src="scripts.js"></script>
+
+
+<div id="mainDiv" class="mainDiv">
+    <div id="menuBar" class="menuBar">
+		<strong>
+		<input type="button" class="titleofhomebar" value="Programmer's Class">
+		</strong>
+		<img src="pgci.png" class="logoathomebar">
+		
+		<input type="button" class="none" value="__________">
+        <b>
+        <div class="dropdown">
+            
+            <button class="dropbtn">START MENU</button>
+                <div class="dropdown-content">
+                    <a href="AboutUs.html">AboutUs</a>
+                    <a href="https://script.google.com/macros/s/AKfycbx_fUFqT1N7oEiNKOCqQbKDKBn2QdNBd4DrQlXqjMEcbU1lg4uKx9xKRv3OcZe67s3BXg/exec">Comment To This Site</a>
+                </div>
+            
+        </div>
+        
+		<input type="button" class="none" value="_________">
+
+        <input type="button" class="cbtn" value="PYTHON" onclick="box01()">
+	
+		<input type="button" class="none" value="_________">
+
+        <input type="button" class="cbtn" value="course" onclick="course()">
+
+		<input type="button" class="none" value="_________">
+        
+        <input type="box" placeholder="Search Something" id="searchbox">
+        <input type="button" value="search" onclick="search()" class="OrangeButtons">
+
+        
+        <input type="button" value="SignUp" onclick="SignUp()" class="logInButtons">
+        <input type="button" value="LogIn" onclick="LogIn()" class="logInButtons">
+        </b>
+    </div>
+    
+    <div id="logInBox" class="hide">
+        <div><h3 class="bluetext">LogIn</h3></div>
+        <input type="Box" placeholder="username" id="loginUsername" class="blueinputbox"><br>
+        <input type=&"Box" placeholder="password" id="loginPassword" class="blueinputbox"><br><br>
+        <input type="button" value="send" onclick="sendDatalogin()" class="logInButtons">
+        <input type="button" value="close" onclick="hide()" class="RedButtons">
+    </div>
+    
+    <div id="SignUpBox" class="hide">
+        <div><h3 class="bluetext">Sign Up</h3></div>
+		<input type="box" placeholder="username" id="signupUsername" class="blueinputbox"><br>
+		<input type="box" placeholder="password" id="signupPassword" class="blueinputbox"><br>
+		<input type="box" placeholder="email" id="signupEmail" class="blueinputbox"><br>
+		<input type="box" placeholder="phone number" id="signupPhonenumber" class="blueinputbox"><br><br>
+		<input type="button" value="create account" onclick="createAccount();hide1();" class="logInButtons">
+        <input type="button" value="close" onclick="hide1()" class="RedButtons">
+    </div>
+    
+</div>
+
+
+    <!--
+    <div class="hide" id="8_prayers"><center>
+		<h3 class="videoTitle">8 prayers</h3><button class="x" onclick="close8p()">X</button>
+        <video src="asset/8 prayers.mp4" controls>
+    </center></div>
+    -->
+    <!-- Popdiv -->
+    <div class="hide" id="course"><center>
+		<h3 class="hide" id="image1">course</h3>
+		<button class="x" onclick="closecourse()">X</button>
+        
+        <img src="pgci.png" width="200px">
+        <h2>HTML courses</h2>
+        <a onclick="introhtml()" class="listbutton">1 >>> HTML full course tutorial for beginners.</a><br><br>
+        <hr><br>
+
+        <h2>JavaScript courses</h2>
+        <a onclick="introjs()" class="listbutton">1 >>> JavaScript full course tutorial for beginners.</a><br><br>
+        <a href="https://www.youtube.com/watch?v=Qj14NdWadaA&list=PLmQKoPepuLJ_6hyB_UJa50Cj0mX4ERv29" class="listbutton">2 >> JavaScript from listed video in MSquare chinnal.</a>
+        <hr><br>
+
+        <h2>Learn at MSquare chinnal on yooutube</h2>
+        <a href="https://www.youtube.com/c/MSquareProgramming" class="listbutton">1 >>> Main Chinnal.</a>
+        <hr><br>
+        
+        <a href="https://programmerclass.w3spaces.com/" class="listbutton">
+        <p>programmerclass.w3spaces.com</p></a>
+    </center></div>
+
+    <div class="hide" id="PGCL"><center>
+		<h3 class="hide" id="image1">programmer's class Icon.png</h3>
+		<button class="x" onclick="closepgcl()">X</button>
+        <img src="pgci.png" width="200px">
+    </center></div>
+
+    <div class="hide" id="introhtml"><center>
+		<h3 class="videoTitle">HTML full Course</h3>
+		<button class="x" onclick="closehtmlintro()">X</button>
+        <iframe width="727" height="409" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center></div>
+
+    <div class="hide" id="introjs"><center>
+		<h3 class="videoTitle">JavaScript full Course</h3>
+		<button class="x" onclick="closejsintro()">X</button>
+        <iframe width="727" height="409" src="https://www.youtube.com/embed/W6NZfCO5SIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center></div>
+
+    <div class="hide" id="notfound"><center>
+		<h3 class="videoTitle">404Notfound</h3>
+		<button class="x" onclick="closenotfound()">X</button>
+    </center></div>
+
+    <div id="box01" class="hide">
+        <div class="upperbar">
+            <input type="button" value="PYTHON CHINNALS ON YOUTUBE" class="upperbar">
+            <button class="x" onclick="closebox01()">X</button>
+        </div>
+
+        <input type="button" value="Codecademy.com" class="upperbar">
+		<br>
+        <a href="https://www.youtube.com/watch?v=yQSEXcf6s2I&list=PLCC34OHNcOtoC6GglhF3ncJ5rLwQrLGnV"><li>Create Graphical User Interfaces With Python And TKinter</li></a>
+
+
+    </div>
+
+    <div id="middleDiv">
+    <table>
+        <tr>
+            <th>
+                <div id="news" class="defDiv">
+                    <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" width="500px" alt="JavaScript">
+                    <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShEvrfer3XT9gPG9UsZs0mjYN4f8QXYpdI2BrU9BxGqWFpNBgO0wyM6J0EzVtoIFBwLRE&usqp=CAU" width="500px" alt="Python programming language">
+                    <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQwUs-WJSc3q6peCNZcpO1kqlM_tX78IQsRBjLbc3eNlOjLOKfgum7IWh2oJD_sS5WeVw&usqp=CAU" width="500px" alt="P5JS">
+                    <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-zneFMUEL-xNgKNzQgYAaWewQHh7DmA4EVOtD4VG17y5pOaRzqfs6SERF6TZlF8toqMg&usqp=CAU" width="500px" alt="Scratch programming language">
+                    <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3iRbe8DiD1c99b9x_X8T4SBNg2VRf9VDe98zZHQNGDxSip8-a01_5aewfheGqycMknyk&usqp=CAU" width="500px" alt="Java programming language">
+                    <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHQJCmrxUqOLvGA4cZRwvj_Bx2VNCE3pXjZwhI6uyh0JENYxXj4xgtS1kFVkcwN1YvQN8&usqp=CAU" width="500px" alt="Node JS">
+                    <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuEOyhktcYZ2uZDqiwAs5PItl8UjafLC6nvQ&usqp=CAU" width="500px" alt="Ruby programming language">
+                    <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd35axDpoB2vzA_t2m4OqHgA8SBemXrmEsMDAjYeb4XfA4TPlGaHrSQsVXgog9QdVaYxA&usqp=CAU" width="500px" alt="C programming language">
+                    <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQry_Et9p1ZWrDlGjDnRAiOG8nD15kFovYWsYqcXWC2DghrdP7dsaM04vCSskOWTBohwtQ&usqp=CAU" width="500px" alt="C++ programming language">
+                    <!--<img class="mySlides" src="" width="500px">-->
+                </div>
+            </th>
+            <th>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" width="500px" alt="JavaScript programming language">
+                
+            </th>
+            <th>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHQJCmrxUqOLvGA4cZRwvj_Bx2VNCE3pXjZwhI6uyh0JENYxXj4xgtS1kFVkcwN1YvQN8&usqp=CAU" width="500px" alt="NodeJS programming language">
+                
+            </th>
+
+        </tr>
+
+
+    </table>
+    </div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <div id="footer" class="footer">
+        <a href="https://script.google.com/macros/s/AKfycbx_fUFqT1N7oEiNKOCqQbKDKBn2QdNBd4DrQlXqjMEcbU1lg4uKx9xKRv3OcZe67s3BXg/exec">
+        <button id="coment_button" class="OrangeButtons" onclick="commentForm()">CommentToThisSite</button>
+        </a>
+    </div>
+
+    </body>
+</html>
