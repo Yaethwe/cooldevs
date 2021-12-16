@@ -191,3 +191,8 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #081338;}
+
+#middleDiv{
+ background-color:aqua;
+ text-align:center;
+}
