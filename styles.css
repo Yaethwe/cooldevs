@@ -150,6 +150,12 @@
     .mySlides {
         display:none;
     }
+    .mySlides1 {
+        display:none;
+    }
+    .mySlides2 {
+        display:none;
+    }
 
 .dropbtn {
   background-color: purple;
