@@ -168,6 +168,10 @@
   padding:5px;
 }
 
+.dropbtn:before {
+ content: ' \2630';
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
