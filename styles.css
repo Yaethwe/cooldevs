@@ -203,3 +203,23 @@
  background-color:aqua;
  text-align:center;
 }
+
+.downloadbtn:before{
+ content:' \21E9';
+}
+
+.downloadbtn{
+ color:skyblue;
+ background-color:gold;
+ border:0px;
+ border-radius:25px;
+ font-family:elephant;
+ font-size:20px;
+}
+
+.downloadbtn:hover{
+ color:skyblue;
+ background-color:gold;
+ border:0px;
+ border-radius:25px;
+}
