@@ -1,11 +1,18 @@
+.body{
+	background-color:#130030;
+}
+
 .menuBar{
-	background-color:cadeblue;
+	background-color:#4B3C34;
 	display:flex;
 	justify-content:space-around;
 	padding:5px;
 	border:0px;
-	border-radius: 10px;
 	text-align: right;
+	position:sticky;
+	top:0;
+	opacity:0.9;
+	box-shadow: 5px 10px 18px #888888;
 }
 
 #logDiv{
@@ -32,7 +39,7 @@
 	display:flex;
 	flex-direction:column;
 	width:25%;
-	height:500px;;
+	height:500px;
 	background-color:#4B3C34;
 	color:white;
 }
@@ -65,6 +72,7 @@
 #middleDiv{
 	display:flex;
 	flex-direction:column;
+	background-color:#130030;
 }
 
 .projectDiv{
@@ -142,10 +150,26 @@
 }
 
 .videoDiv{
- display:block;
- background-color: aqua;
- margin-left:0px;
- margin-right:1000px;
+ display:flex;
+ width:100%;
+ padding:5px;
+ flex-direction:column;
+ background-color: #574d48;
+}
+
+.video{
+	display:flex;
+	align-self:center;
+	width:75%;
+}
+
+br{
+	background-color:#5e5e5e;
+}
+
+hr{
+	background-color:#5e5e5e;
+	color:white;
 }
 
 .none{
@@ -155,8 +179,7 @@
 }
 
 .titleofhomebar{
- background-color:aqua;
- color:black;
+ color:white;
  border:0px;
  font-size:20px;
 }
@@ -205,10 +228,11 @@
 }
 
 .footer{
-	background-color:bisque;
+	display:flex;
+	flex-direction:column;
+	background-color:purple;
 	padding:5px;
 	border:0px;
-	border-radius: 10px;
 	text-align: right;        
 }
 
@@ -263,12 +287,6 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #081338;}
-
-#middleDiv{
- background-color:aqua;
- text-align:center;
-}
-
 .downloadbtn:before{
  content:' \21E9';
 }
@@ -309,5 +327,12 @@
 	background-color:orange;
 	color:white;
 	border:0px;
-	border-radius:10px;
+	border-radius:20px;
+	padding:5px;
+}
+.backBtn{
+	border:2px solid white;
+	border-radius:20px;
+	color:white;
+	background-color:#4B3C34;
 }
