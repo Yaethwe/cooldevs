@@ -5,7 +5,7 @@
 .menuBar{
 	background-color:#4B3C34;
 	display:flex;
-	justify-content:space-around;
+	justify-content:space-between;
 	padding:5px;
 	border:0px;
 	text-align: right;
@@ -18,6 +18,17 @@
 #logDiv{
 	position:absolute;
 	top:0;
+	display:none;
+	justify-content:center;
+	background-color:gray;
+	width:100%;
+	height:100%;
+	opacity:0.9;
+}
+
+#loadingDiv{
+	position:absolute;
+	top:0;
 	display:flex;
 	justify-content:center;
 	background-color:gray;
@@ -25,6 +36,7 @@
 	height:100%;
 	opacity:0.9;
 }
+
 
 #form{
 	margin-top:10%;
