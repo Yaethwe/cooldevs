@@ -52,6 +52,16 @@ function closeLogIn() {
 	logDiv.style="display:none";
 }
 
+function closeLoadingDiv() {
+	loadingDiv.style="display:none";
+}
+
+function openLogIn() {
+	logDiv.style="display:flex";
+}
+
+closeLoadingDiv();
+
 function reload() {
 	location.reload();
 }
@@ -84,8 +94,5 @@ function logInBtn() {
 	logIn(un.value, pd.value);
 }
 
-function openLogIn(){ 
-	logDiv.style="display:flex;";
-}
 closeLogIn();
 
