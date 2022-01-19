@@ -6,17 +6,20 @@ const un = document.getElementById("un");
 const pd = document.getElementById("pd");
 const pageTitle = document.getElementById("pageTitle");
 const dashboard = document.getElementById("Dashboard");
+const loadingDiv = document.getElementById("loadingDiv");
+const logInBtnv = document.getElementById("logInButton");
+const logOutBtnv = document.getElementById("logOutButton");
 let u, p, l, ph;
 const up = [
 	{
 		name:"YeaeThawe",
-		pass:"asdfghjkl",
+		pass:"300400yt",
 		level:"A",
 		photo:"pgci.png",
 		gender:"male"
 	},
 	{
-		name:"YeaeThawe",
+		name:"NyanKaungSet",
 		pass:"asdfghjkl",
 		level:"A",
 		photo:"pgci.png",
@@ -42,6 +45,8 @@ function logined(user, pass, level, photo) {
 	p=pass;
 	l=level;
 	ph=photo;
+	logInBtnv.className="hide";
+	logOutBtnv.className="logInBtn";
 	dashboard.innerHTML=`
 	<div class="userInfo">
 	<img src=${ph}>
