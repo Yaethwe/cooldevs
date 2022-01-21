@@ -9,21 +9,23 @@ const dashboard = document.getElementById("Dashboard");
 const loadingDiv = document.getElementById("loadingDiv");
 const logInBtnv = document.getElementById("logInButton");
 const logOutBtnv = document.getElementById("logOutButton");
-let u, p, l, ph;
+let u, p, l, ph, g, n;
 const up = [
 	{
 		name:"YeaeThawe",
 		pass:"300400yt",
 		level:"A",
 		photo:"pgci.png",
-		gender:"male"
+		gender:"male",
+		note:"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"
 	},
 	{
 		name:"NyanKaungSet",
 		pass:"asdfghjkl",
 		level:"A",
 		photo:"pgci.png",
-		gender:"male"
+		gender:"male",
+		note:"northing yet"
 	}
 ];
 
@@ -39,19 +41,27 @@ function clickSHPD() {
 	}
 }
 
-function logined(user, pass, level, photo) {
+function logined(user, pass, level, photo, gender, note) {
 	pageTitle.innerHTML= user+"'s Dashboard";
 	u=user;
 	p=pass;
 	l=level;
 	ph=photo;
+	g=gender;
+	n=note;
 	logInBtnv.className="hide";
 	logOutBtnv.className="logInBtn";
 	dashboard.innerHTML=`
 	<div class="userInfo">
-	<img src=${ph}>
-	<label>${u}</label>
-	<label>Level: ${l}</label>
+		<img src=${ph}>
+		<label>${u}</label>
+		<label>Level: ${l}</label>
+		<hr>
+		<div style="padding:10px">
+			<h4>Notes</h4>
+			<p>${n}</p>
+            <iframe src="localstorager/index.html" width="100%" height="1000px"></iframe>
+		</div>
 	</div>
 	`;
 	
