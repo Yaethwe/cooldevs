@@ -1,137 +1,33 @@
-<!DOCTYLE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title id="pageTitle">Programmer's Class</title>
+    <link rel="icon" href="img/fav.png">
 
-        <!-- Load external CSS styles -->
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="pgci.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    </head>
+    <link rel="stylesheet" href="css/styles.css">
 
+    <title>Cool-Devs</title>
+</head>
 <body>
-
-
-
-
-<div id="mainDiv" class="mainDiv">
-    <div id="menuBar" class="menuBar">
-		<div id="logoDiv" onclick="reload()">
-			<strong>
-				<label type="button" class="titleofhomebar">Programmer's Class</label>
-			</strong>
-			<img src="pgci.png" class="logoathomebar">
-		</div>
-		
-        <div class="navDiv">
-			<div class="dropdown">
-				
-				<button class="dropbtn">START MENU</button>
-					<div class="dropdown-content">
-						<a href="AboutUs.html">AboutUs</a>
-						<a href="https://script.google.com/macros/s/AKfycbx_fUFqT1N7oEiNKOCqQbKDKBn2QdNBd4DrQlXqjMEcbU1lg4uKx9xKRv3OcZe67s3BXg/exec">Comment To This Site</a>
-						<a href="QDSMS.html" style="color:orange;" class="private">- QDSMS - private</a>
-						<a href="PrintWays.html" style="color:orange;" class="private">- PrintWays - private</a>
-					</div>
-				
-			</div>
-			
-
-			
-			<div class="dropdown">
-				
-				<button class="dropbtn">BOOKS</button>
-				<div class="dropdown-content">
-					<a href="HTMLBOOKS.html">HTML books</a>
-					<a href="https://eimaung.com/" style="color:orange;" class="private"> EiMaung</a>
-				</div>
-			</div>
-			
-
-			<div class="dropdown">
-				
-				<button class="dropbtn">PROJECTS</button>
-				<div class="dropdown-content">
-					<a onclick="project('JSTextEditor')">JS textEditor</a>
-					<a onclick="project('fresh-mobile-market')">Fresh Mobile Market</a>
-					<a onclick="project('test4test')">test4test Language</a>
-					<a onclick="project('VBvocabulary')">VB Vocabulary</a>
-				</div>
-			</div>
-		</div>
-        <div class="logIn">
-			<button class="logInBtn" onclick="openLogIn()" id="logInButton">LogIn</button>
-			<button class="hide" onclick="reload()" id="logOutButton">LogOut</button>
-		</div>		
-	</div>
-	
-
-
-		
-	<div id="logDiv">
-		
-		<div id="form">
-			<h3 style="color:orange">LOGIN</h3>
-			<input type="text" placeholder="username" id="un">
-			<input type="password" placeholder="password" id="pd">
-			<div class="row"><label style="color:white;">show password</label><input type="checkbox" style="margin:5px;" onclick="clickSHPD()"></div>
-			<button class="logInBtn" onclick="logInBtn()">LogIn</button>
-			<br>
-			<button class="backBtn" onclick="closeLogIn()">back</button>
-		</div>
-	</div>
-	
-	<div id="loadingDiv">
-		
-		
-		
-	</div>
-	
-    <div id="middleDiv">
-		<div id="Dashboard">
-			<div class="videoDiv">
-				<iframe class="video" width="727" height="409" src="https://www.youtube.com/embed/hwP7WQkmECE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<br>
-			<div class="videoDiv">
-				<iframe class="video" width="727" height="409" src="https://www.youtube.com/embed/HkdAHXoRtos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<br>
-			<div class="videoDiv">
-				<iframe class="video" width="727" height="409" src="https://www.youtube.com/embed/DHjqpvDnNGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<br>
-			<div class="videoDiv">
-				<iframe class="video" width="727" height="409" src="https://www.youtube.com/embed/Cz3WcZLRaWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<br>
-			<div class="videoDiv">
-				<iframe class="video" width="727" height="409" src="https://www.youtube.com/embed/Mus_vwhTCq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<br>
-			<div class="videoDiv">
-				<iframe class="video" width="727" height="409" src="https://www.youtube.com/embed/cuHDQhDhvPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<br>
-			<div class="videoDiv">
-				<iframe class="video" width="727" height="409" src="https://www.youtube.com/embed/-B58GgsehKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<hr>
-		</div>
-	</div>	
-   
-    <div id="footer" class="footer">
-        <a href="https://script.google.com/macros/s/AKfycbx_fUFqT1N7oEiNKOCqQbKDKBn2QdNBd4DrQlXqjMEcbU1lg4uKx9xKRv3OcZe67s3BXg/exec">
-        <button id="coment_button" class="OrangeButtons" onclick="commentForm()">CommentToThisSite</button>
-        </a>
-		<h5 style="display:flex;align-self:center;color:white;">CopyRight© 2022 Programmer's Class</h5>
+    <div id="topbar" class="top-bar-container bg-blue">
+        <h1 class="EL fg-white"><img src="img/fav.png" width="50px" style="margin-top: 10px;">Cool-Devs</h1>
     </div>
-</div>	
+    <div style="height:50px;"></div>
+    <div class="text-container bg-skyblue SS fg-white">
+        <p>This website is under construction.</p>
+        <p><a href="https://yeaethawe.netlify.app">Maung YeaeThawae</a> and Maung Nyan Kaung Set are hard working for this site.</p>
+    </div>
+    <!--hidden side menu-->
+    <div id="sidemenu" class="hide">
+        
+    </div>
+
+    <div id="footer" class="footer-container bg-violet">
+        <label class="SS fg-white">Copyright &copy; 2022 Cool-Devs</label>
+    </div>
 </body>
-<script src="styles.js"></script>
-<script src="scripts.js"></script>
+<script src="js/app.js"></script>
 </html>
