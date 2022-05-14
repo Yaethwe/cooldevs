@@ -2,33 +2,70 @@
     display:none;
 }
 
+#motherDiv{
+    margin-top: -32px;
+    margin-left: 0px;
+}
+
+#middleDiv{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerDiv{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItem{
+    margin: 5px;
+    border-bottom: 2px solid yellow;
+}
+
+.menuItem:hover{
+    border-bottom: 2px solid rgb(187, 187, 104);
+    cursor: pointer;
+}
+
 /* container divs */
 .top-bar-container{
     display:flex;
     justify-content: space-around;
-    width:100vw;
+    width:99vw;
     min-height: 100px;
-    margin-top: -32px;
-    margin-left: -8px;
     top: 0;
-    left: 0;
     position: sticky;
+    opacity:0.5;
 }
 
-.text-container{
+.text-container-rounded{
     border-radius: 20px;
     margin:5px;
     padding:5px;
+}
+
+.msg-container-rounded{
+    display:flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin:5px;
+    padding:5px;
+}
+
+.activeC{
+    width:50vw;
 }
 
 .footer-container{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    width:100vw;
+    width:99vw;
     min-height:100px;
-    margin-top: 0px;
-    margin-left: -8px;
 }
 
 /*default elements*/
@@ -53,6 +90,7 @@ h1{
 .bg-skyblue{background-color: skyblue;}
 .bg-purple{background-color: purple;}
 .bg-violet{background-color: violet;}
+.bg-wheat{background-color: wheat;}
 
 /*foreground colors*/
 .fg-orange{color: orange;}
@@ -66,3 +104,58 @@ h1{
 .fg-skyblue{color: skyblue;}
 .fg-purple{color: purple;}
 .fg-violet{color: violet;}
+.fg-wheat{color: wheat;}
+
+/*buttons*/
+.xBtn{
+    border:0px;
+    background-color: red;
+    color:white;
+    width:30px;
+    height:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.xBtn:hover{
+    border:0px;
+    background-color: rgb(247, 73, 73);
+    color:white;
+    cursor: pointer;
+}
+
+button{
+    border:0px;
+    border-radius:5px;
+    background-color:rgb(141, 141, 141);
+    color:white;
+}
+
+button:hover{
+    background-color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+
+.rounded{border-radius: 20px;}
+
+.pad-mar{
+    padding:3px;
+    margin:3px;
+}
+
+.title{
+    font-size: larger;
+}
+
+@media screen and (max-width:600px){
+    .activeC{
+        width:98vw;
+    }
+}
+
+.no-underline{text-decoration: none;}
+
+.flex-column{display:flex;flex-direction: column;}
+.flex-center{display:flex;align-items: center;justify-content: center;}
+.pad-bottom-5{padding-bottom:5px;}
+.pad-bottom-10{padding-bottom:10px;}
