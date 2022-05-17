@@ -9,7 +9,6 @@ auth.onAuthStateChanged(user => {
         firebase.database().ref().child('users').child(user.uid).get().then(snapshot => {
             if (snapshot.exists()){
                 main(snapshot.val());
-                console.log(snapshot.val());
             }else{
                 alert("no data");
             }

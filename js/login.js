@@ -7,5 +7,7 @@ loginBtn.onclick = () => {signin(unLogin.value, pwdLogin.value)}
 auth.onAuthStateChanged(user => {
 	if(user){
         location.href=`dashboard.html`;
+    }else{
+        alert('Login Fail.');
     }
 });
