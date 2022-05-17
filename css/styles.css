@@ -9,6 +9,7 @@
 
 #middleDiv{
     display:flex;
+    min-height:70vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -35,7 +36,7 @@
 .top-bar-container{
     display:flex;
     justify-content: space-around;
-    width:99vw;
+    width:98vw;
     min-height: 100px;
     top: 0;
     position: sticky;
@@ -64,7 +65,7 @@
     display:flex;
     justify-content: space-around;
     align-items: center;
-    width:99vw;
+    width:98vw;
     min-height:100px;
 }
 
@@ -72,6 +73,18 @@
 
 h1{
     font-size: 50px;
+}
+
+.half-div-container{
+	display:flex;
+	justify-content:space-around;
+	flex-direction:row;
+}
+
+.half-div{
+	display:flex;
+	flex-direction:column;
+	width:45vw;
 }
 
 /*fonts*/
@@ -91,6 +104,8 @@ h1{
 .bg-purple{background-color: purple;}
 .bg-violet{background-color: violet;}
 .bg-wheat{background-color: wheat;}
+.bg-layer1{background-color: antiquewhite;}
+.bg-layer2{background-color: aliceblue;}
 
 /*foreground colors*/
 .fg-orange{color: orange;}
@@ -125,6 +140,7 @@ h1{
 }
 
 .common-btn{
+    width:50%;
     border:0px;
     border-radius:5px;
     background-color:rgb(141, 141, 141);
@@ -152,14 +168,44 @@ h1{
 
 @media screen and (max-width:600px){
     .activeC{
-        width:92vw;
+        width:90vw;
+    }
+	.half-div-container{
+		display:flex;
+		justify-content:center;
+		flex-direction:column;
+	}
+	.half-div{
+		display:flex;
+		width:90vw;
+	}
+    .footer-container{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        width:95vw;
+        min-height:100px;
+    }
+    .top-bar-container{
+        display:flex;
+        justify-content: space-around;
+        width:95vw;
+        min-height: 100px;
+        top: 0;
+        position: sticky;
+        opacity:0.5;
+    }
+    .common-btn{
+        width:100%;
     }
 }
 
 .no-underline{text-decoration: none;}
 
+.flex{display:flex;}
 .flex-column{flex-direction: column;}
 .flex-center{display:flex;align-items: center;justify-content: center;}
+.center{display:flex;align-items: center;justify-content: center;}
 .pad-bottom-5{padding-bottom:5px;}
 .pad-bottom-10{padding-bottom:10px;}
 .pad-10{padding:10px;}
@@ -174,3 +220,11 @@ h1{
     background-color: beige;
     color:blue;
 }
+
+.rounded-img{
+    width:100px;
+    height:100px;
+    border-radius:10px;
+}
+
+.icon{width:30px;height:30px;}

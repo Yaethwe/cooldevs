@@ -32,8 +32,8 @@ auth.onAuthStateChanged(user => {
             birthYear:bySignup.value,
             email:emailSignup.value,
         }).then(a=>{
-            alert("Sign Up successful!");
-            location.href="dashboard.html";
-        });
+            alert("Sign Up successful!")
+            location.href="dashboard.html"
+        })
     }
 })
