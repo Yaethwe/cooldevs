@@ -124,14 +124,17 @@ h1{
     cursor: pointer;
 }
 
-button{
+.common-btn{
     border:0px;
     border-radius:5px;
     background-color:rgb(141, 141, 141);
     color:white;
+    font-size: large;
+    font-family: sans-serif;
+    padding: 5px;
 }
 
-button:hover{
+.common-btn:hover{
     background-color: rgb(163, 163, 163);
     cursor: pointer;
 }
@@ -149,13 +152,25 @@ button:hover{
 
 @media screen and (max-width:600px){
     .activeC{
-        width:98vw;
+        width:92vw;
     }
 }
 
 .no-underline{text-decoration: none;}
 
-.flex-column{display:flex;flex-direction: column;}
+.flex-column{flex-direction: column;}
 .flex-center{display:flex;align-items: center;justify-content: center;}
 .pad-bottom-5{padding-bottom:5px;}
 .pad-bottom-10{padding-bottom:10px;}
+.pad-10{padding:10px;}
+
+.inputText{
+    width:100%;
+    outline: none;
+    border:2px solid goldenrod;
+    height: 30px;
+    font-size: medium;
+    border-radius: 5px;
+    background-color: beige;
+    color:blue;
+}

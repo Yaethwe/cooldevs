@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Cool-Devs | Login</title>
+    <title>Cool-Devs | Dashboard</title>
 </head>
 <body>
     <div id="motherDiv">
@@ -20,18 +20,14 @@
             <div id="menuDiv" class="SS fg-white">
                 <a href="../index.html" class="menuItem fg-white" title="back to home page">Home Page</a>
                 <a href="aboutus.html" class="menuItem fg-white" title="to About Us page">About Us</a>
-                <a href="signup.html" class="menuItem fg-white" title="to Signup page">Signup</a>
+                <a onclick="signout()" class="menuItem fg-white" title="to LogOut">LogOut</a>
             </div>
         </div>
         <div style="height:50px;"></div>
         <div id="middleDiv">
-            <div class="text-container-rounded bg-wheat SS fg-purple activeC pad-10 flex-center flex-column">
-                <h2 class="fg-orange">LOGIN</h2>
-                <input type="text" class="inputText" placeholder="email" id="un-login">
-                <br>
-                <input type="password" class="inputText" placeholder="password" id="pwd-login">
-                <br>
-                <button class="common-btn" id="login-btn">LOGIN</button>
+            <div class="text-container-rounded bg-wheat SS fg-purple activeC pad-10 flex-center flex-column" id="text-container">
+                <h2 class="fg-orange">Welcome To Dashboard <span id="username-box" class="fg-orange"></span></h2>
+                <h4 class="SS fg-gray" id="email-box"></h4>
             </div>
         </div>
         <div id="footerDiv" class="footer-container bg-violet">
@@ -44,5 +40,5 @@
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 <script src="../js/auth.js"></script>
-<script src="../js/login.js"></script>
+<script src="../js/dashboard.js"></script>
 </html>

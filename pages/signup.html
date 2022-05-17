@@ -25,26 +25,28 @@
         </div>
         <div style="height:50px;"></div>
         <div id="middleDiv">
-            <div class="text-container-rounded bg-wheat SS fg-purple activeC">
-                <h2 class="fg-orange">Sorry</h2>
-                <a>Signup section is not done yet.</a>
-                <p><a href="https://yeaethawe.netlify.app"><em>Maung YeaeThawae</em></a> and <a href="https://nyankaungset.netlify.app"><em>Maung Nyan Kaung Set</em></a> are hard working for this site.</p>
+            <div class="text-container-rounded bg-wheat SS fg-purple activeC pad-10 flex-center flex-column">
+                <h2 class="fg-orange">SIGN UP</h2>
+                <input type="text" class="inputText" placeholder="email" id="email-signup">
+                <br>
+                <input type="password" class="inputText" placeholder="password" id="pwd-signup">
+                <br>
+                <input type="text" class="inputText" placeholder="nickname" id="un-signup">
+                <br>
+                <input type="number" class="inputText" placeholder="birth year" id="by-signup">
+                <br>
+                <button class="common-btn" id="signup-btn">SIGN UP</button>
             </div>
         </div>
         <div id="footerDiv" class="footer-container bg-violet">
-<!--           <div class="main-content-item-container">
-                <div class="content-item-container">
-                    <label class="SS title fg-orange">Pages</label>
-                    <a href="../index.html" class="fg-white">Home</a>
-                    <a href="signup.html" class="fg-white">Signup</a>
-                    <a href="login.html" class="fg-white">Login</a>
-                    <a href="aboutus.html" class="fg-white">About Us</a>
-                </div>
---> 
-            </div>
             <label class="SS fg-white">Copyright &copy; 2022 Cool-Devs</label>
         </div>
     </div>
 </body>
-<!--<script src="../js/app.js"></script>-->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/signup.js"></script>
 </html>
