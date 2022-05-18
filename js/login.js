@@ -8,6 +8,17 @@ loginBtn.onclick = () => {signin(unLogin.value, pwdLogin.value).then(e=>{
     }
 })}
 
+pwdLogin.addEventListener('keyup',e=>{
+	if(e.key==="Enter"){
+		signin(unLogin.value, pwdLogin.value).then(e=>{
+            if(!e){
+                alert('login fail');
+            }
+        })
+	}
+})
+    
+
 auth.onAuthStateChanged(user => {
 	if(user){
         location.href=`dashboard.html`

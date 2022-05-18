@@ -1,5 +1,6 @@
 var unBox = document.querySelector('#username-box');
 var emailBox = document.querySelector('#email-box');
+var imgBox = document.querySelector('#img-box');
 
 var UID, UD;
 
@@ -25,5 +26,10 @@ function main(ud){
         UD=ud;
         unBox.innerHTML = ud.name;
         emailBox.innerHTML = ud.email;
+        if(ud.profilePicture == "default"){
+            imgBox.src="../img/dpp.jpg"
+        }else{
+            imgBox.src=ud.profilePicture
+        }
     }
 }
