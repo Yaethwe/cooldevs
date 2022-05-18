@@ -18,18 +18,23 @@
                 <a href="https://cooldevs.netlify.app/" class="no-underline"><h1 class="EL fg-white"><img src="../img/fav.png" width="50px" style="margin-top: 10px;">Cool-Devs</h1></a>
             </div>
             <div id="menuDiv" class="SS fg-white">
-                <a href="../index.html" class="menuItem fg-white" title="back to home page">Home Page</a>
-                <a href="aboutus.html" class="menuItem fg-white" title="to About Us page">About Us</a>
-                <a href="signup.html" class="menuItem fg-white" title="to Signup page">Signup</a>
+                <a href="../index.html" class="menuItem fg-white" title="back to home page"><ion-icon name="home-outline"></ion-icon>Home Page</a>
+                <a href="aboutus.html" class="menuItem fg-white" title="to About Us page"><ion-icon name="information-circle-outline"></ion-icon>About Us</a>
+                <a href="signup.html" class="menuItem fg-white" title="to Signup page"><ion-icon name="create-outline"></ion-icon>Signup</a>
             </div>
         </div>
         <div style="height:50px;"></div>
         <div id="middleDiv">
             <div class="text-container-rounded bg-wheat SS fg-purple activeC pad-10 flex-center flex-column">
                 <h2 class="fg-orange">LOGIN</h2>
-                <input type="text" class="inputText" placeholder="email" id="un-login">
-                <br>
-                <input type="password" class="inputText" placeholder="password" id="pwd-login">
+                <div class="entryBox">
+                    <label for="un-login">Email Address</label>
+                    <input type="text" class="inputText" placeholder="email address" id="un-login">
+                </div>
+                <div class="entryBox">
+                    <label for="pwd-login">Password</label>
+                    <input type="password" class="inputText" placeholder="password" id="pwd-login">
+                </div>
                 <br>
                 <button class="common-btn" id="login-btn">LOGIN</button>
             </div>
@@ -39,6 +44,9 @@
         </div>
     </div>
 </body>
+<!--ionicons-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
