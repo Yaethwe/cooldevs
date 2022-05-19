@@ -27,15 +27,19 @@ signupBtn.onclick = () => {
 var UID
 
 auth.onAuthStateChanged(user => {
-	if(user){
-        firebase.database().ref().child('users').child(user.uid).set({
-            name:unSignup.value,
-            birthYear:bySignup.value,
-            email:eSignup.value,
-            profilePicture:"default",
-        }).then(a=>{
-            alert("Sign Up successful!")
+    firebase.database().ref().child('users').child(firebase.auth().getUid()).get().then(s=>{
+        if(s.exists()){
             location.href="dashboard.html"
-        })
-    }
+        }else{
+            firebase.database().ref().child('users').child(user.uid).set({
+                name:unSignup.value,
+                birthYear:bySignup.value,
+                email:eSignup.value,
+                profilePicture:"default",
+            }).then(a=>{
+                alert("Sign Up successful!")
+                location.href="dashboard.html"
+            })
+        }
+    })
 })

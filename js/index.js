@@ -39,7 +39,7 @@ class Message {
 }
 
 let yt = new Message("This is a testing message box.", "msg-container-rounded bg-violet SS fg-white activeC");
-
+logoutA.style.display='none';
 auth.onAuthStateChanged(user => {
 	if(user){
         loginA.style.display='none';
