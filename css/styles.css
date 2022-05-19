@@ -210,6 +210,9 @@ h1{
 .pad-bottom-10{padding-bottom:10px;}
 .pad-10{padding:10px;}
 
+.fs-40{font-size:40px;}
+.fs-20{font-size:20px;}
+
 .inputText{
     width:100%;
     outline: none;
@@ -232,4 +235,18 @@ h1{
 .entryBox{
     width:90%;
     margin:10px;
+}
+
+.flip-vert{font-size:30px;transform: rotate(180deg);}
+.flip-0{font-size:30px;transform: rotate(180deg);}
+
+#biography-box-container{
+    width:98%;
+}
+
+.rich-editor{
+    width: 100%;
+    padding:5px;
+    min-height: 300px;
+    outline:none;
 }

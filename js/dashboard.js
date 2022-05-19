@@ -1,9 +1,10 @@
 var unBox = document.querySelector('#username-box');
 var emailBox = document.querySelector('#email-box');
 var imgBox = document.querySelector('#img-box');
+var bioBox = document.querySelector('#biography-box');
+var saveBtnBio = document.querySelector('#save-btn-at-bio');
 
 var UID, UD;
-
 auth.onAuthStateChanged(user => {
 	if(user){
         UID = user.uid;
@@ -27,9 +28,22 @@ function main(ud){
         unBox.innerHTML = ud.name;
         emailBox.innerHTML = ud.email;
         if(ud.profilePicture == "default"){
-            imgBox.src="../img/dpp.jpg"
+            imgBox.src="../img/dpp.jpg";
         }else{
-            imgBox.src=ud.profilePicture
+            imgBox.src=ud.profilePicture;
+        }
+        if(ud.bio){
+            bioBox.innerHTML=ud.bio
+        }else{
+            bioBox.innerHTML="You don't have any biography yet.";
         }
     }
+}
+
+saveBtnBio.onclick=()=>{
+    firebase.database().ref().child('users').child(UID).update({
+        bio:bioBox.innerHTML
+    }).then(()=>{
+        alert("Saved Successfully.");
+    })
 }
