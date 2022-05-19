@@ -3,6 +3,9 @@ var emailBox = document.querySelector('#email-box');
 var imgBox = document.querySelector('#img-box');
 var bioBox = document.querySelector('#biography-box');
 var saveBtnBio = document.querySelector('#save-btn-at-bio');
+var saveBtnPe = document.querySelector('#save-btn-at-pe');
+var unEditBox = document.querySelector('#un-edit');
+var ppEditBox = document.querySelector('#pp-edit');
 
 var UID, UD;
 auth.onAuthStateChanged(user => {
@@ -18,7 +21,7 @@ auth.onAuthStateChanged(user => {
             console.error(error);
         });
     }else{
-        location.href(`login.html`);
+        location.href=`login.html`;
     }
 });
 
@@ -46,4 +49,34 @@ saveBtnBio.onclick=()=>{
     }).then(()=>{
         alert("Saved Successfully.");
     })
+}
+
+saveBtnPe.onclick=()=>{
+    if(unEditBox.value){
+        if(ppEditBox.value){
+            firebase.database().ref().child('users').child(UID).update({
+                name:unEditBox.value,
+                profilePicture:ppEditBox.value
+            }).then(()=>{
+                alert("Saved Successfully.");
+                location.reload();
+            })
+        }
+    }
+}
+
+//popup profile editor
+function showProfileEditor() {
+    popup.style.display = "block";
+    cover.style.display = "block";
+    unEditBox.value=UD.name;
+    ppEditBox.value=UD.profilePicture;
+}
+var popup = document.querySelector('.popup');
+var cover = document.querySelector('.cover');
+popup.style.display = "none";
+cover.style.display = "none";
+function deletePopup(){
+    popup.style.display = "none";
+    cover.style.display = "none";
 }

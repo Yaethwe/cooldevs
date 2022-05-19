@@ -36,7 +36,7 @@
 .top-bar-container{
     display:flex;
     justify-content: space-around;
-    width:98vw;
+    width:100vw;
     min-height: 100px;
     top: 0;
     position: sticky;
@@ -65,7 +65,7 @@
     display:flex;
     justify-content: space-around;
     align-items: center;
-    width:98vw;
+    width:100vw;
     min-height:100px;
 }
 
@@ -166,40 +166,6 @@ h1{
     font-size: larger;
 }
 
-@media screen and (max-width:600px){
-    .activeC{
-        width:90vw;
-    }
-	.half-div-container{
-		display:flex;
-		justify-content:center;
-		flex-direction:column;
-	}
-	.half-div{
-		display:flex;
-		width:90vw;
-	}
-    .footer-container{
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
-        width:95vw;
-        min-height:100px;
-    }
-    .top-bar-container{
-        display:flex;
-        justify-content: space-around;
-        width:95vw;
-        min-height: 100px;
-        top: 0;
-        position: sticky;
-        opacity:0.5;
-    }
-    .common-btn{
-        width:100%;
-    }
-}
-
 .no-underline{text-decoration: none;}
 
 .flex{display:flex;}
@@ -249,4 +215,102 @@ h1{
     padding:5px;
     min-height: 300px;
     outline:none;
+}
+
+/*body design*/
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---- POPUP BOX DESIGN ---- */
+.popup{
+    display: none;
+    position:fixed;
+    top:10vh;
+    left:25vw;
+    width:50vw;
+    margin:0 auto;
+    background-color: #acacac;
+    color: #fff;
+    z-index: 3;
+}
+.popup-header{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.popup-header span{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 26px;
+    padding: 10px;
+    cursor: pointer;
+}
+.popup-header span:hover{background-color: red;}
+.popup-header span:active{
+    background-color: darkred;
+}
+.popup-content{
+    min-height: 100px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #cccccc;
+}
+.popup-footer{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.cover{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    background-color: black;
+    opacity: 0.6;
+}
+
+@media screen and (max-width:600px){
+    .activeC{
+        width:90vw;
+    }
+	.half-div-container{
+		display:flex;
+		justify-content:center;
+		flex-direction:column;
+	}
+	.half-div{
+		display:flex;
+		width:90vw;
+	}
+    .footer-container{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        width:95vw;
+        min-height:100px;
+    }
+    .top-bar-container{
+        display:flex;
+        justify-content: space-around;
+        width:95vw;
+        min-height: 100px;
+        top: 0;
+        position: sticky;
+        opacity:0.5;
+    }
+    .common-btn{
+        width:100%;
+    }
+    .popup{
+        width:100vw;
+        top:10vh;
+        left:0;
+    }
 }

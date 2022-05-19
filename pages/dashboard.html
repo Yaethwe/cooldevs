@@ -29,7 +29,7 @@
             <div class="text-container-rounded bg-wheat SS fg-purple activeC pad-10 flex-center flex-column" id="text-container">
                 <h2 class="fg-orange">Welcome To Dashboard <span id="username-box" class="fg-orange"></span></h2>
                 <img class="rounded-img" src="" alt="Image" id="img-box">
-                <h4 class="SS fg-gray" id="email-box"></h4>
+                <div class="flex"><h4 class="SS fg-gray" id="email-box"></h4><a onclick="showProfileEditor()"><ion-icon style="font-size:50px;" name="create-outline"></ion-icon></a></div>
                 <div id="biography-box-container">
                     <h3 SS fg-gray>Biography</h3>
                     <hr>
@@ -41,7 +41,31 @@
         <div id="footerDiv" class="footer-container bg-violet">
             <label class="SS fg-white">Copyright &copy; 2022 Cool-Devs</label>
         </div>
-    </div>
+
+        <!--pop up profile editor-->
+        <div class="cover" style="display:none;"></div>
+        <center>
+            <div class="popup SS">
+                <div class="popup-header">
+                    <h2>Edit Profile</h2>
+                    <span  onclick="deletePopup()">&times;</span>
+                </div>
+                <div class="popup-content">
+                    <div class="entryBox">
+                        <label for="un-edit">Nickname</label>
+                        <input type="text" class="inputText" placeholder="Enter Your Nickname." id="un-edit">
+                    </div>
+                    <div class="entryBox">
+                        <label for="pp-edit">Profile Picture</label>
+                        <input type="text" class="inputText" placeholder="Profile Picture Link." id="pp-edit">
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <button class="common-btn" id="save-btn-at-pe">save</button>
+                </div>
+            </div>
+        </center>
+        </div>
 </body>
 <!--ionicons-->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
