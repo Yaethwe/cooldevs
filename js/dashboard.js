@@ -6,6 +6,8 @@ var saveBtnBio = document.querySelector('#save-btn-at-bio');
 var saveBtnPe = document.querySelector('#save-btn-at-pe');
 var unEditBox = document.querySelector('#un-edit');
 var ppEditBox = document.querySelector('#pp-edit');
+var searchBtnSc = document.querySelector('#search-btn-at-sc');
+var emailBoxSc = document.querySelector('#email-search');
 
 var UID, UD;
 auth.onAuthStateChanged(user => {
@@ -61,7 +63,11 @@ saveBtnPe.onclick=()=>{
                 alert("Saved Successfully.");
                 location.reload();
             })
+        }else{
+            alert('require profile picture link');
         }
+    }else{
+        alert('require username');
     }
 }
 
@@ -72,11 +78,38 @@ function showProfileEditor() {
     unEditBox.value=UD.name;
     ppEditBox.value=UD.profilePicture;
 }
-var popup = document.querySelector('.popup');
+var popup = document.querySelector('#popup1');
 var cover = document.querySelector('.cover');
 popup.style.display = "none";
 cover.style.display = "none";
 function deletePopup(){
     popup.style.display = "none";
     cover.style.display = "none";
+}
+
+//popup search with email
+function showSearchEmail() {
+    popup2.style.display = "block";
+    cover.style.display = "block";
+    
+}
+var popup2 = document.querySelector('#popup2');
+
+popup2.style.display = "none";
+cover.style.display = "none";
+function deletePopup2(){
+    popup2.style.display = "none";
+    cover.style.display = "none";
+}
+
+searchBtnSc.onclick=()=>{
+    if(emailBoxSc.value){
+        browseProfileWithEmail(emailBoxSc.value);
+    }else{
+        alert("Enter the Email Address that you want to search first.");
+    }
+};
+
+function browseProfileWithEmail(email){
+    location.href=`browse.html?emailsearch=${btoa(email)}`;
 }

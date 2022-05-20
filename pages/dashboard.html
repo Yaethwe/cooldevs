@@ -37,6 +37,9 @@
                     <button id="save-btn-at-bio" class="common-btn" style="margin:10px;">save</button>
                 </div>
             </div>
+            <div id="search-email-container" style="width:100%">
+                <button class="common-btn" onclick="showSearchEmail()">Search Profile With Email<ion-icon name="search-outline"></ion-icon></button>
+            </div>
         </div>
         <div id="footerDiv" class="footer-container bg-violet">
             <label class="SS fg-white">Copyright &copy; 2022 Cool-Devs</label>
@@ -44,28 +47,43 @@
 
         <!--pop up profile editor-->
         <div class="cover" style="display:none;"></div>
-        <center>
-            <div class="popup SS">
-                <div class="popup-header">
-                    <h2>Edit Profile</h2>
-                    <span  onclick="deletePopup()">&times;</span>
+    
+        <div id="popup1" class="popup SS">
+            <div class="popup-header">
+                <h2>Edit Profile</h2>
+                <span  onclick="deletePopup()">&times;</span>
+            </div>
+            <div class="popup-content">
+                <div class="entryBox">
+                    <label for="un-edit">Nickname</label>
+                    <input type="text" class="inputText" placeholder="Enter Your Nickname." id="un-edit">
                 </div>
-                <div class="popup-content">
-                    <div class="entryBox">
-                        <label for="un-edit">Nickname</label>
-                        <input type="text" class="inputText" placeholder="Enter Your Nickname." id="un-edit">
-                    </div>
-                    <div class="entryBox">
-                        <label for="pp-edit">Profile Picture</label>
-                        <input type="text" class="inputText" placeholder="Profile Picture Link." id="pp-edit">
-                    </div>
-                </div>
-                <div class="popup-footer">
-                    <button class="common-btn" id="save-btn-at-pe">save</button>
+                <div class="entryBox">
+                    <label for="pp-edit">Profile Picture</label>
+                    <input type="text" class="inputText" placeholder="Profile Picture Link." id="pp-edit">
                 </div>
             </div>
-        </center>
+            <div class="popup-footer">
+                <button class="common-btn" id="save-btn-at-pe">save</button>
+            </div>
         </div>
+
+        <div id="popup2" class="popup SS">
+            <div class="popup-header">
+                <h2>Search With Nickname</h2>
+                <span  onclick="deletePopup2()">&times;</span>
+            </div>
+            <div class="popup-content">
+                <div class="entryBox">
+                    <label for="un-edit">Email Address</label>
+                    <input type="text" class="inputText" placeholder="enter email" id="email-search">
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="common-btn" id="search-btn-at-sc">search <ion-icon name="search-outline"></ion-icon></button>
+            </div>
+        </div>
+    </div>
 </body>
 <!--ionicons-->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
