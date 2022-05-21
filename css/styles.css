@@ -106,6 +106,7 @@ h1{
 .bg-wheat{background-color: wheat;}
 .bg-layer1{background-color: antiquewhite;}
 .bg-layer2{background-color: aliceblue;}
+.bg-layer3{background-color: rgb(126, 172, 212);}
 
 /*foreground colors*/
 .fg-orange{color: orange;}

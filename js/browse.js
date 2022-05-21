@@ -55,26 +55,3 @@ function render(type){
             break;
     }
 }
-/*
-let data = {
-    "fgjnbvsykb":{
-        name:"YeaeThawe",
-        email:"yeaethawe@gmail.com"
-    },
-    "plswhyujbc":{
-        name:"NKS",
-        email:"nks@gmail.com"
-    },
-    "ujadblerbv":{
-        name:"BOBO",
-        email:"bobo@gmail.com"
-    }
-}
-function print(txt){
-    console.log(txt);
-}
-
-for(i in data){
-    print(data[i].email);
-}
-*/
