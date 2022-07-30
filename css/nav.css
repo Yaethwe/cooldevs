@@ -1,0 +1,126 @@
+:root{
+    font-size:16px;
+    font-family: 'Open Sans';
+    --text-primary:#b6b6b6;
+    --text-secondary:#ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 0.25em;
+}
+
+body::-webkit-scrollbar-track {
+    background: 1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navbar{
+    margin-top: 20px;
+    width:5rem;
+    height:100vh;
+    position:fixed;
+    background-color: var(--bg-primary);
+    display: flex;
+    transition: width 200ms ease;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:100%;
+}
+
+.nav-item{
+    width:100%;
+    display:flex;
+}
+
+.nav-item:last-child{
+    margin-top: auto;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    width:100%;
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+
+ion-icon{
+    font-size: 40px;;
+    min-width:2rem;
+    margin: 0 1.5rem;
+    color: #ff7eee;
+    transition: var(--transition-speed);
+}
+
+
+
+.navbar:hover{
+    width:16rem;
+}
+
+.navbar:hover .link-text{
+    display: block;
+}
+
+@media screen and (max-width:640px){
+    .navbar{
+        width:100vw;
+        height:5rem;
+        position:fixed;
+        bottom: 0;
+        background-color: var(--bg-primary);
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar-nav{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display:flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .nav-item:last-child{
+        margin-top: 0;
+    }
+    .navbar:hover{
+        width:100vw;
+    }
+    .navbar:hover .link-text{
+        display: none;
+    }    
+    main{margin: 0;}
+}

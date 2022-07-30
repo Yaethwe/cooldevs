@@ -8,11 +8,13 @@
     <link rel="icon" href="../img/fav.png">
 
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/nav.css">
 
     <title>Cool-Devs | Dashboard</title>
 </head>
 <body>
     <div id="motherDiv">
+        <!--
         <div id="topbar" class="top-bar-container bg-blue flex-column flex-center pad-bottom-10">
             <div id="logoDiv">
                 <a href="https://cooldevs.netlify.app/" class="no-underline"><h1 class="EL fg-white"><img src="../img/fav.png" width="50px" style="margin-top: 10px;">Cool-Devs</h1></a>
@@ -24,6 +26,31 @@
                 <a><ion-icon id="up-down-switch" name="chevron-down-circle-outline"></ion-icon></a>
             </div>
         </div>
+        -->
+
+        <!--Nav bar-->
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span class="link-text">Home Page</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="aboutus-a" href="../pages/aboutus.html" class="nav-link">
+                        <ion-icon name="information-circle-outline"></ion-icon>
+                        <span class="link-text">About Us</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="signout()" class="nav-link">
+                        <ion-icon name="open-outline"></ion-icon>
+                        <span class="link-text">LogOut</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div style="height:50px;"></div>
         <div id="middleDiv">
             <div class="text-container-rounded bg-wheat SS fg-purple activeC pad-10 flex-center flex-column" id="text-container">

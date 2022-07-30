@@ -140,7 +140,7 @@ createBtnAtCC.onclick=()=>{
         {
             name:nameBoxAtCC.value,
             owner:{
-                id:UD.uid,
+                id:btoa(UID),
                 name:UD.name,
                 pass:"c-d",
             },

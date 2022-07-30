@@ -8,11 +8,13 @@
     <link rel="icon" href="../img/fav.png">
 
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/nav.css">
 
     <title>Cool-Devs | About Us</title>
 </head>
 <body>
     <div id="motherDiv">
+        <!--
         <div id="topbar" class="top-bar-container bg-blue flex-column flex-center pad-bottom-10">
             <div id="logoDiv">
                 <a href="https://cooldevs.netlify.app/" class="no-underline"><h1 class="EL fg-white"><img src="../img/fav.png" width="50px" style="margin-top: 10px;">Cool-Devs</h1></a>
@@ -24,6 +26,37 @@
                 <a><ion-icon id="up-down-switch" name="chevron-down-circle-outline"></ion-icon></a>
             </div>
         </div>
+        -->
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="../pages/dashboard.html" class="nav-link">
+                        <ion-icon name="card-outline"></ion-icon>
+                        <span class="link-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="login-a" href="../index.html" class="nav-link">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span class="link-text">Home Page</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="signup-a" href="../pages/signup.html" class="nav-link">
+                        <ion-icon name="create-outline"></ion-icon>
+                        <span class="link-text">SignUp</span>
+                    </a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a id="logout-a" onclick="signout()" class="nav-link">
+                        <ion-icon name="open-outline"></ion-icon>
+                        <span class="link-text">LogOut</span>
+                    </a>
+                </li>
+                -->
+            </ul>
+        </nav>
         <div style="height:50px;"></div>
         <div id="middleDiv">
             <div id="PrivacyPolicy" class="text-container-rounded bg-skyblue SS fg-white activeC">
