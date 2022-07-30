@@ -43,3 +43,6 @@ auth.onAuthStateChanged(user => {
         }
     })
 })
+
+// hide the logo.
+upDownSwitch.onclick();

@@ -24,3 +24,6 @@ auth.onAuthStateChanged(user => {
         location.href=`dashboard.html`
     }
 })
+
+// hide the logo.
+upDownSwitch.onclick();

@@ -10,6 +10,8 @@ var searchBtnSc = document.querySelector('#search-btn-at-sc');
 var emailBoxSc = document.querySelector('#email-search');
 
 var UID, UD;
+let ud2;
+
 auth.onAuthStateChanged(user => {
 	if(user){
         UID = user.uid;
@@ -113,3 +115,39 @@ searchBtnSc.onclick=()=>{
 function browseProfileWithEmail(email){
     location.href=`browse.html?emailsearch=${btoa(email)}`;
 }
+
+function joinChat() {
+    let x = prompt("Chat Name")
+        x?joinTC(x):alert("Fail")
+}
+
+function createTC() {
+    //later
+}
+
+function joinTC(chat){
+    let img2;
+    if(UD.profilePicture=="default"){
+        img2 = "https://cooldevs.netlify.app/img/fav.png"
+    }else{
+        img2 = UD.profilePicture
+    }
+    open(`https://teenchat.netlify.app/?chat=${btoa(JSON.stringify(
+        {
+            chat:chat,
+            data:{
+                username:UD.name, 
+                id:btoa(UID),
+                config:{
+                    bg:"blue",
+                    fg:"white"
+                },
+                img:img2
+            }
+        }
+    ))}`)
+}
+
+
+// hide the logo.
+upDownSwitch.onclick();
