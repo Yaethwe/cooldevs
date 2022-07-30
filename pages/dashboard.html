@@ -40,8 +40,13 @@
             <div id="search-email-container" style="width:100%">
                 <button class="common-btn" onclick="showSearchEmail()">Search Profile With Email<ion-icon name="search-outline"></ion-icon></button>
             </div>
+            <br>
             <div id="join-chat-container" style="width:100%">
-                <button class="common-btn" style="background-color:blue" onclick="joinChat()">Join Chat<ion-icon name="card-outline"></ion-icon></button>
+                <button class="common-btn" style="background-color:blue" onclick="showJoinChat()">Join Chat<ion-icon name="card-outline"></ion-icon></button>
+            </div>
+            <br>
+            <div id="create-chat-container" style="width:100%">
+                <button class="common-btn" style="background-color:blue" onclick="showCreateChat()">Create Chat<ion-icon name="card-outline"></ion-icon></button>
             </div>
         </div>
         <div id="footerDiv" class="footer-container bg-violet">
@@ -84,6 +89,38 @@
             </div>
             <div class="popup-footer">
                 <button class="common-btn" id="search-btn-at-sc">search <ion-icon name="search-outline"></ion-icon></button>
+            </div>
+        </div>
+
+        <div id="popup3" class="popup SS">
+            <div class="popup-header">
+                <h2>Create Chat</h2>
+                <span  onclick="deletePopup3()">&times;</span>
+            </div>
+            <div class="popup-content">
+                <div class="entryBox">
+                    <label for="un-edit">New Chat Address</label>
+                    <input type="text" class="inputText" placeholder="enter your chat name" id="name-create-chat">
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="common-btn" id="create-btn-at-cc">create <ion-icon name="edit-outline"></ion-icon></button>
+            </div>
+        </div>
+
+        <div id="popup4" class="popup SS">
+            <div class="popup-header">
+                <h2>Join Chat</h2>
+                <span  onclick="deletePopup4()">&times;</span>
+            </div>
+            <div class="popup-content">
+                <div class="entryBox">
+                    <label for="un-edit">Chat Address</label>
+                    <input type="text" class="inputText" placeholder="enter chat address" id="name-join-chat">
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="common-btn" id="join-btn-at-jc">join <ion-icon name="edit-outline"></ion-icon></button>
             </div>
         </div>
     </div>

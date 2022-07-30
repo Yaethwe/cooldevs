@@ -8,6 +8,10 @@ var unEditBox = document.querySelector('#un-edit');
 var ppEditBox = document.querySelector('#pp-edit');
 var searchBtnSc = document.querySelector('#search-btn-at-sc');
 var emailBoxSc = document.querySelector('#email-search');
+var createBtnAtCC = document.querySelector('#create-btn-at-cc');
+var nameBoxAtCC = document.querySelector('#name-create-chat');
+var nameBoxAtJC = document.querySelector('#name-join-chat');
+var joinBtnAtJC = document.querySelector('#join-btn-at-jc');
 
 var UID, UD;
 let ud2;
@@ -116,9 +120,58 @@ function browseProfileWithEmail(email){
     location.href=`browse.html?emailsearch=${btoa(email)}`;
 }
 
-function joinChat() {
-    let x = prompt("Chat Name")
-        x?joinTC(x):alert("Fail")
+//create chat
+function showCreateChat() {
+    popup3.style.display = "block";
+    cover.style.display = "block";
+}
+var popup3 = document.querySelector('#popup3');
+
+popup3.style.display = "none";
+cover.style.display = "none";
+function deletePopup3(){
+    popup3.style.display = "none";
+    cover.style.display = "none";
+}
+
+createBtnAtCC.onclick=()=>{
+    if(nameBoxAtCC.value){
+        open(`https://teenchat.netlify.app/?new=${btoa(JSON.stringify(
+        {
+            name:nameBoxAtCC.value,
+            owner:{
+                id:UD.uid,
+                name:UD.name,
+                pass:"c-d",
+            },
+        }
+    ))}`)
+    }else{
+        alert("Enter your new chat name")
+    }
+}
+
+//join chat
+
+function showJoinChat() {
+    popup4.style.display = "block";
+    cover.style.display = "block";
+}
+var popup4 = document.querySelector('#popup4');
+
+popup4.style.display = "none";
+cover.style.display = "none";
+function deletePopup4(){
+    popup4.style.display = "none";
+    cover.style.display = "none";
+}
+
+joinBtnAtJC.onclick=()=>{
+    if(nameBoxAtJC.value){
+        joinTC(nameBoxAtJC.value)
+    }else{
+        alert("Enter the chat's address first.")
+    }
 }
 
 function createTC() {
