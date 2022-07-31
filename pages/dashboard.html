@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a onclick="signout()" class="nav-link">
+                    <a onclick="auth.signout()" class="nav-link">
                         <ion-icon name="open-outline"></ion-icon>
                         <span class="link-text">LogOut</span>
                     </a>
@@ -74,6 +74,10 @@
             <br>
             <div id="create-chat-container" style="width:100%">
                 <button class="common-btn" style="background-color:blue" onclick="showCreateChat()">Create Chat<ion-icon name="card-outline"></ion-icon></button>
+            </div>
+            <br>
+            <div id="create-chat-container" style="width:100%">
+                <button class="common-btn" style="background-color:blue" onclick="open('../fileuploader/index.html')">Upload Music<ion-icon name="card-outline"></ion-icon></button>
             </div>
         </div>
         <div id="footerDiv" class="footer-container bg-violet">

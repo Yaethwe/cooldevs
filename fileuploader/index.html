@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<title>FileUploader</title>
+		
+	</head>
+	<body>
+		<input id="fileName" type="text" class="txt">
+		<input id="btn" for="file" type="button" value="select">
+		<input style="display:none;" id="file" type="file" class="file">
+		<div>
+			<input class="btn" id="clearbtn" type="button" value="Remove Selected Files">
+			<input class="btn" id="uploadbtn" type="button" value="Upload File">
+		</div>
+		<div id="view">
+		</div>
+	</body>
+	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+	<script src="script.js"></script>
+</html>
