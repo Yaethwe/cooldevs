@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../img/fav.png">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/nav.css">
+
+    <title>Cool-Devs | Dashboard</title>
+</head>
+<body>
+    <div id="motherDiv">
+        <!--
+        <div id="topbar" class="top-bar-container bg-blue flex-column flex-center pad-bottom-10">
+            <div id="logoDiv">
+                <a href="https://cooldevs.netlify.app/" class="no-underline"><h1 class="EL fg-white"><img src="../img/fav.png" width="50px" style="margin-top: 10px;">Cool-Devs</h1></a>
+            </div>
+            <div id="menuDiv" class="SS fs-20 fg-white">
+                <a href="../index.html" class="menuItem fg-white" title="back to home page"><ion-icon name="home-outline"></ion-icon>Home Page</a>
+                <a href="aboutus.html" class="menuItem fg-white" title="to About Us page"><ion-icon name="information-circle-outline"></ion-icon>About Us</a>
+                <a onclick="signout()" class="menuItem fg-white" title="to LogOut"><ion-icon name="log-out-outline"></ion-icon>Log Out</a>
+                <a><ion-icon id="up-down-switch" name="chevron-down-circle-outline"></ion-icon></a>
+            </div>
+        </div>
+        -->
+
+        <!--Nav bar-->
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span class="link-text">Home Page</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="aboutus-a" href="../pages/aboutus.html" class="nav-link">
+                        <ion-icon name="information-circle-outline"></ion-icon>
+                        <span class="link-text">About Us</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="auth.signout()" class="nav-link">
+                        <ion-icon name="open-outline"></ion-icon>
+                        <span class="link-text">LogOut</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div style="height:50px;"></div>
+        <div id="middleDiv">
+            <div class="text-container-rounded bg-wheat SS fg-purple activeC pad-10 flex-center flex-column" id="text-container">
+                <h2 class="fg-orange">Welcome To Dashboard <span id="username-box" class="fg-orange"></span></h2>
+                <img class="rounded-img" src="" alt="Image" id="img-box">
+                <div class="flex"><h4 class="SS fg-gray" id="email-box"></h4><a onclick="showProfileEditor()"><ion-icon style="font-size:50px;" name="create-outline"></ion-icon></a></div>
+                <div id="biography-box-container">
+                    <h3 SS fg-gray>Biography</h3>
+                    <hr>
+                    <div id="biography-box" contenteditable="true" class="rich-editor bg-white" style="margin-left: -5px;">Your biography.</div>
+                    <button id="save-btn-at-bio" class="common-btn" style="margin:10px;">save</button>
+                </div>
+            </div>
+            <div id="search-email-container" style="width:100%">
+                <button class="common-btn" onclick="showSearchEmail()">Search Profile With Email<ion-icon name="search-outline"></ion-icon></button>
+            </div>
+            <br>
+            <div id="join-chat-container" style="width:100%">
+                <button class="common-btn" style="background-color:blue" onclick="showJoinChat()">Join Chat<ion-icon name="card-outline"></ion-icon></button>
+            </div>
+            <br>
+            <div id="create-chat-container" style="width:100%">
+                <button class="common-btn" style="background-color:blue" onclick="showCreateChat()">Create Chat<ion-icon name="card-outline"></ion-icon></button>
+            </div>
+            <br>
+            <div id="create-chat-container" style="width:100%">
+                <a href="https://cooldevs.netlify.app/pages/fileuploader.html" target="_blank"><button class="common-btn" style="background-color:blue">Upload Music<ion-icon name="card-outline"></ion-icon></button></a>
+            </div>
+        </div>
+        <div id="footerDiv" class="footer-container bg-violet">
+            <label class="SS fg-white">Copyright &copy; 2022 Cool-Devs</label>
+        </div>
+
+        <!--pop up profile editor-->
+        <div class="cover" style="display:none;"></div>
+    
+        <div id="popup1" class="popup SS">
+            <div class="popup-header">
+                <h2>Edit Profile</h2>
+                <span  onclick="deletePopup()">&times;</span>
+            </div>
+            <div class="popup-content">
+                <div class="entryBox">
+                    <label for="un-edit">Nickname</label>
+                    <input type="text" class="inputText" placeholder="Enter Your Nickname." id="un-edit">
+                </div>
+                <div class="entryBox">
+                    <label for="pp-edit">Profile Picture</label>
+                    <input type="text" class="inputText" placeholder="Profile Picture Link." id="pp-edit">
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="common-btn" id="save-btn-at-pe">save</button>
+            </div>
+        </div>
+
+        <div id="popup2" class="popup SS">
+            <div class="popup-header">
+                <h2>Search With Nickname</h2>
+                <span  onclick="deletePopup2()">&times;</span>
+            </div>
+            <div class="popup-content">
+                <div class="entryBox">
+                    <label for="un-edit">Email Address</label>
+                    <input type="text" class="inputText" placeholder="enter email" id="email-search">
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="common-btn" id="search-btn-at-sc">search <ion-icon name="search-outline"></ion-icon></button>
+            </div>
+        </div>
+
+        <div id="popup3" class="popup SS">
+            <div class="popup-header">
+                <h2>Create Chat</h2>
+                <span  onclick="deletePopup3()">&times;</span>
+            </div>
+            <div class="popup-content">
+                <div class="entryBox">
+                    <label for="un-edit">New Chat Address</label>
+                    <input type="text" class="inputText" placeholder="enter your chat name" id="name-create-chat">
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="common-btn" id="create-btn-at-cc">create <ion-icon name="edit-outline"></ion-icon></button>
+            </div>
+        </div>
+
+        <div id="popup4" class="popup SS">
+            <div class="popup-header">
+                <h2>Join Chat</h2>
+                <span  onclick="deletePopup4()">&times;</span>
+            </div>
+            <div class="popup-content">
+                <div class="entryBox">
+                    <label for="un-edit">Chat Address</label>
+                    <input type="text" class="inputText" placeholder="enter chat address" id="name-join-chat">
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="common-btn" id="join-btn-at-jc">join <ion-icon name="edit-outline"></ion-icon></button>
+            </div>
+        </div>
+    </div>
+</body>
+<!--ionicons-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/dashboard.js"></script>
+</html>
