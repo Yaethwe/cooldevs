@@ -234,13 +234,13 @@ body{
     left:25vw;
     width:50vw;
     margin:0 auto;
-    background-color: #acacac;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     z-index: 3;
 }
 .popup-header{
     position: relative;
-    padding: 10px;
+    padding: 5px 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -248,11 +248,11 @@ body{
     position: absolute;
     top: 0px;
     right: 0px;
-    font-size: 26px;
-    padding: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
     cursor: pointer;
 }
-.popup-header span:hover{background-color: red;}
+.popup-header span:hover{background-color: red;color: #fff;}
 .popup-header span:active{
     background-color: darkred;
 }
@@ -260,12 +260,39 @@ body{
     min-height: 100px;
     font-size: 20px;
     padding: 10px;
-    background-color: #cccccc;
 }
 .popup-footer{
     padding: 10px;
     font-size: 20px;
 }
+.popup-footer .common-btn{
+    background-color: #333;
+    margin: 0 auto;
+    display: block;
+    width: 110px;
+    text-transform: capitalize;
+}
+
+/* additional_features */
+.additional_features{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+.additional_features button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 7px;
+    width: 300px;
+    height: 68px;
+}
+
 
 .cover{
     position:fixed;

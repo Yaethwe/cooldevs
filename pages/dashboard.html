@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/nav.css">
 
+    <style>body{overflow-x: hidden;}</style>
     <title>Cool-Devs | Dashboard</title>
 </head>
 <body>
@@ -44,7 +45,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a onclick="auth.signout()" class="nav-link">
+                    <a onclick="signout()" class="nav-link">
                         <ion-icon name="open-outline"></ion-icon>
                         <span class="link-text">LogOut</span>
                     </a>
@@ -64,20 +65,10 @@
                     <button id="save-btn-at-bio" class="common-btn" style="margin:10px;">save</button>
                 </div>
             </div>
-            <div id="search-email-container" style="width:100%">
-                <button class="common-btn" onclick="showSearchEmail()">Search Profile With Email<ion-icon name="search-outline"></ion-icon></button>
-            </div>
-            <br>
-            <div id="join-chat-container" style="width:100%">
-                <button class="common-btn" style="background-color:blue" onclick="showJoinChat()">Join Chat<ion-icon name="card-outline"></ion-icon></button>
-            </div>
-            <br>
-            <div id="create-chat-container" style="width:100%">
-                <button class="common-btn" style="background-color:blue" onclick="showCreateChat()">Create Chat<ion-icon name="card-outline"></ion-icon></button>
-            </div>
-            <br>
-            <div id="create-chat-container" style="width:100%">
-                <button class="common-btn" style="background-color:blue" onclick="loaction.href='https://cooldevs.netlify.app/pages/fileuploader.html'">Upload Music<ion-icon name="card-outline"></ion-icon></button>
+            <div class="additional_features">
+                    <button class="common-btn" onclick="showSearchEmail()">Search Profile With Email<ion-icon name="search-outline"></ion-icon></button>
+                    <button class="common-btn" style="background-color:blue" onclick="showJoinChat()">Join Chat<ion-icon name="card-outline"></ion-icon></button>
+                    <button class="common-btn" style="background-color:blue" onclick="showCreateChat()">Create Chat<ion-icon name="card-outline"></ion-icon></button>
             </div>
         </div>
         <div id="footerDiv" class="footer-container bg-violet">
@@ -110,8 +101,8 @@
         <div id="popup2" class="popup SS">
             <div class="popup-header">
                 <h2>Search With Nickname</h2>
-                <span  onclick="deletePopup2()">&times;</span>
-            </div>
+                <span  onclick="deletePopup2()">x</span>
+            </div><hr>
             <div class="popup-content">
                 <div class="entryBox">
                     <label for="un-edit">Email Address</label>
@@ -119,15 +110,15 @@
                 </div>
             </div>
             <div class="popup-footer">
-                <button class="common-btn" id="search-btn-at-sc">search <ion-icon name="search-outline"></ion-icon></button>
+                <button class="common-btn" id="search-btn-at-sc">search</button>
             </div>
         </div>
 
         <div id="popup3" class="popup SS">
             <div class="popup-header">
                 <h2>Create Chat</h2>
-                <span  onclick="deletePopup3()">&times;</span>
-            </div>
+                <span  onclick="deletePopup3()">x</span>
+            </div><hr>
             <div class="popup-content">
                 <div class="entryBox">
                     <label for="un-edit">New Chat Address</label>
@@ -135,15 +126,15 @@
                 </div>
             </div>
             <div class="popup-footer">
-                <button class="common-btn" id="create-btn-at-cc">create <ion-icon name="edit-outline"></ion-icon></button>
+                <button class="common-btn" id="create-btn-at-cc">create</button>
             </div>
         </div>
 
         <div id="popup4" class="popup SS">
             <div class="popup-header">
                 <h2>Join Chat</h2>
-                <span  onclick="deletePopup4()">&times;</span>
-            </div>
+                <span  onclick="deletePopup4()">x</span>
+            </div><hr>
             <div class="popup-content">
                 <div class="entryBox">
                     <label for="un-edit">Chat Address</label>
@@ -151,7 +142,7 @@
                 </div>
             </div>
             <div class="popup-footer">
-                <button class="common-btn" id="join-btn-at-jc">join <ion-icon name="edit-outline"></ion-icon></button>
+                <button class="common-btn" id="join-btn-at-jc">join</button>
             </div>
         </div>
     </div>

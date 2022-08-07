@@ -28,6 +28,7 @@ main{
 }
 
 .navbar{
+    z-index: 10;
     margin-top: 20px;
     width:5rem;
     height:100vh;
