@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" href="../img/fav.png">
-
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/nav.css">
-
     <style>body{overflow-x: hidden;}</style>
     <title>Cool-Devs | Dashboard</title>
 </head>
@@ -45,9 +42,9 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a onclick="signout()" class="nav-link">
+                    <a onclick="auth.signout()" class="nav-link">
                         <ion-icon name="open-outline"></ion-icon>
-                        <span class="link-text">LogOut</span>
+                        <span class="link-text">Log Out</span>
                     </a>
                 </li>
             </ul>
@@ -55,22 +52,26 @@
         <div style="height:50px;"></div>
         <div id="middleDiv">
             <div class="text-container-rounded bg-wheat SS fg-purple activeC pad-10 flex-center flex-column" id="text-container">
-                <h2 class="fg-orange">Welcome To Dashboard <span id="username-box" class="fg-orange"></span></h2>
+                <h2 class="fg-orange">Welcome To Dashboard <br><span id="username-box" class="fg-orange"></span></h2>
                 <img class="rounded-img" src="" alt="Image" id="img-box">
-                <div class="flex"><h4 class="SS fg-gray" id="email-box"></h4><a onclick="showProfileEditor()"><ion-icon style="font-size:50px;" name="create-outline"></ion-icon></a></div>
+                <div class="flex" style="flex-wrap: wrap;"><h4 class="SS fg-gray" id="email-box"></h4><a onclick="showProfileEditor()"><ion-icon style="font-size:50px;" name="create-outline"></ion-icon></a></div>
                 <div id="biography-box-container">
                     <h3 SS fg-gray>Biography</h3>
                     <hr>
                     <div id="biography-box" contenteditable="true" class="rich-editor bg-white" style="margin-left: -5px;">Your biography.</div>
-                    <button id="save-btn-at-bio" class="common-btn" style="margin:10px;">save</button>
+                    <button id="save-btn-at-bio" class="common-btn">save</button>
                 </div>
             </div>
-            <div class="additional_features">
-                    <button class="common-btn" onclick="showSearchEmail()">Search Profile With Email<ion-icon name="search-outline"></ion-icon></button>
-                    <button class="common-btn" style="background-color:blue" onclick="showJoinChat()">Join Chat<ion-icon name="card-outline"></ion-icon></button>
-                    <button class="common-btn" style="background-color:blue" onclick="showCreateChat()">Create Chat<ion-icon name="card-outline"></ion-icon></button>
-            </div>
         </div>
+
+        <div class="additional_features">
+            <button class="common-btn" onclick="showSearchEmail()">Search Profile With Email<ion-icon name="search-outline"></ion-icon></button>
+            <button class="common-btn" style="background-color:blue" onclick="showJoinChat()">Join Chat<ion-icon name="card-outline"></ion-icon></button>
+            <button class="common-btn" style="background-color:blue" onclick="showCreateChat()">Create Chat<ion-icon name="card-outline"></ion-icon></button>
+            <button class="common-btn" style="background-color:blue" onclick="location.href='https://cooldevs.netlify.app/pages/fileuploader.html'">Upload Music<ion-icon name="card-outline"></ion-icon></button>
+        </div>
+
+
         <div id="footerDiv" class="footer-container bg-violet">
             <label class="SS fg-white">Copyright &copy; 2022 Cool-Devs</label>
         </div>
@@ -110,7 +111,7 @@
                 </div>
             </div>
             <div class="popup-footer">
-                <button class="common-btn" id="search-btn-at-sc">search</button>
+                <button class="common-btn" id="search-btn-at-sc">search</ion-icon></button>
             </div>
         </div>
 
