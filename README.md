@@ -1,4 +1,4 @@
-<p  align=center><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=elephant&duration=7000&center=true&vCenter=true&width=500&height=70&lines=CoolDevs+%3A+Beyond+Better+Together" alt="Typing SVG" /></a></p>
+<p  align=center><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=merriweather&duration=7000&center=true&vCenter=true&width=500&height=70&lines=CoolDevs+%3A+Beyond+Better+Together" alt="Typing SVG" /></a></p>
 
 
 <p align=center><img align=center src="img/fav.png"></p> <br><br>
@@ -51,8 +51,8 @@ Your information is encrypted:lock:. We update this website from time to time. :
 <table align=center>
 <h3 align=center>Our Team</h3>
   <tr>
-    <td align="center"><a href="https://github.com/Yaethwe"><img src="https://avatars.githubusercontent.com/u/76844276?v=4" width="120px;" alt=""/><br/><b>Yae Thwe</b></a><br /><a href="" title="Owner">:man_in_tuxedo:</a></td>
-    <td align="center"><a href="https://github.com/NyanKaungSet"><img src="https://avatars.githubusercontent.com/u/96227457?s=120&v=4" width="120px;" alt=""/><br/><b>Nyan Kaung Set</b></a><br /><a href="" title="Member">:man_office_worker:</a></td>
+    <td align="center"><a href="https://github.com/Yaethwe"><img src="https://avatars.githubusercontent.com/u/76844276?v=4" width="120px;" alt=""/><br/><b>Yae Thwe</b></a><br /><a href="" title="Owner">:man_in_tuxedo:</a> <a href="" title="code">:computer:</a></td>
+    <td align="center"><a href="https://github.com/NyanKaungSet"><img src="https://avatars.githubusercontent.com/u/96227457?s=120&v=4" width="120px;" alt=""/><br/><b>Nyan Kaung Set</b></a><br /><a href="" title="Member">:man_office_worker:</a> <a href="" title="code">:computer:</a></td>
   </tr>
 </table><br>
 
@@ -62,6 +62,6 @@ Your information is encrypted:lock:. We update this website from time to time. :
 
 <h1 align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=VT323&size=50&color=FFFFFF&background=363636&center=true&vCenter=true&width=800&height=80&lines=Thanks+For+Visiting!">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Elephant&size=50&color=FF8C00&background=363636&center=true&vCenter=true&width=800&height=80&lines=Thanks+For+Visiting!">
   </a>
 </h1>
