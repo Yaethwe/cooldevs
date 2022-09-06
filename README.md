@@ -1,7 +1,7 @@
 <p  align=center><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=merriweather&duration=7000&center=true&vCenter=true&width=500&height=70&lines=CoolDevs+%3A+Beyond+Better+Together" alt="Typing SVG" /></a></p>
 
 
-<p align=center><img align=center src="img/fav.png"></p> <br><br>
+<p align=center><img align=center src="img/fav.png"></p><hr>
 
 
 <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"> <img src="https://img.shields.io/github/commit-activity/m/Yaethwe/cooldevs?style=flat"><br>
@@ -17,9 +17,9 @@
 # Introduction
 We have launched Cooldevs on 15 December 2022. Cooldevs is a multi-purpose website. You can :
 
-- [x] Chat with your friends :thought_balloon:
-- [x] Listen to a music :headphones:
-- [x] And many more are about to add in the future! :clipboard:
+- :white_check_mark: Chat with your friends :thought_balloon:
+- :white_check_mark: Listen to a music :headphones:
+- :white_check_mark: And many more are about to add in the future! :clipboard:
 
 Your information is encrypted:lock:. We update this website from time to time. :watch:
 
@@ -64,4 +64,5 @@ Your information is encrypted:lock:. We update this website from time to time. :
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.herokuapp.com?font=Elephant&size=50&color=FF8C00&background=363636&center=true&vCenter=true&width=800&height=80&lines=Thanks+For+Visiting!">
   </a>
+  
 </h1>
