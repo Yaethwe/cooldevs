@@ -29,13 +29,14 @@ main{
 
 .navbar{
     z-index: 10;
-    margin-top: 20px;
+    padding: 3px;
+    margin-top: 30px;
     width:5rem;
-    height:100vh;
+    height:100%;
     position:fixed;
     background-color: var(--bg-primary);
     display: flex;
-    transition: width 200ms ease;
+    transition: width 450ms ease-in-out;
 }
 
 .navbar-nav{
@@ -102,6 +103,7 @@ ion-icon{
         height:5rem;
         position:fixed;
         bottom: 0;
+        left: 0;
         background-color: var(--bg-primary);
         display: flex;
         justify-content: space-around;
