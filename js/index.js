@@ -35,8 +35,8 @@ var data = {
                         username:"anonymous", 
                         id:"anonymous",
                         config:{
-                            bg:"white",
-                            fg:"blue"
+                            bg:"blue",
+                            fg:"white"
                         },
                         img:"https://cooldevs.netlify.app/img/fav.png/"
                     }
