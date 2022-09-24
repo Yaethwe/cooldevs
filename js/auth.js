@@ -17,13 +17,30 @@ const auth = firebase.auth();
 function signup(email, password){
     firebase.auth().createUserWithEmailAndPassword(email, password).then(cred =>{
         return cred.user;
+    }).catch(err=>{
+        popErr(err.code);
+        //alert(`Error Code: ${err.code} \n Message : ${err.message}`);
     });
 }
 
 function signin(email, password){
     auth.signInWithEmailAndPassword(email, password).then(cred => {
         return cred.user;
+    }).catch(err=>{
+        popErr(err.code);
+        //alert(`Error Code: ${err.code} \n Message : ${err.message}`);
     });
+}
+
+function popErr(err){
+    switch(err){
+        case "auth/network-request-failed":
+            alert('No internet connection. Please connect to a network first.');
+            break;
+        case "auth/invalid-email":
+            alert('Please enter an existing email.');
+            break;
+    }
 }
 
 function signout(){

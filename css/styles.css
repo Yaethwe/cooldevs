@@ -1,47 +1,12 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.hide{
+    display:none;
 }
 
-
-/* -------- BOOTSTRAP LIKE STYLING -------- */
-.rounded{border-radius: 20px;}
-.pad-mar{padding:3px;margin:3px;}
-.title{font-size: larger;}
-.no-underline{text-decoration: none;}
-.flex{display:flex;}
-.flex-column{flex-direction: column;}
-.flex-center{display:flex;align-items: center;justify-content: center;}
-.center{display:flex;align-items: center;justify-content: center;}
-.pad-bottom-5{padding-bottom:5px;}
-.pad-bottom-10{padding-bottom:10px;}
-.pad-10{padding:10px;}
-.fs-40{font-size:40px;}
-.fs-20{font-size:20px;}
-.hide{display:none;}
-/* BOOTSRAP LIKE STYLING END */
-
-
-/* -------- OLD NAVIGATION BAR STYLING -------- */
-.menuItem{
-    margin: 5px;
-    border-bottom: 2px solid yellow;
-}
-.menuItem:hover{
-    border-bottom: 2px solid rgb(187, 187, 104);
-    cursor: pointer;
-}
-.flip-vert{font-size:30px;transform: rotate(180deg);}
-.flip-0{font-size:30px;transform: rotate(180deg);}
-/* NAVBAR STYLING END */
-
-
-/* -------- CONTAINER AND DIVS STYLING -------- */
 #motherDiv{
     margin-top: -32px;
     margin-left: 0px;
 }
+
 #middleDiv{
     display:flex;
     min-height:70vh;
@@ -49,12 +14,25 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 #footerDiv{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.menuItem{
+    margin: 5px;
+    border-bottom: 2px solid yellow;
+}
+
+.menuItem:hover{
+    border-bottom: 2px solid rgb(187, 187, 104);
+    cursor: pointer;
+}
+
+/* container divs */
 .top-bar-container{
     display:flex;
     justify-content: space-around;
@@ -64,11 +42,13 @@ body{
     position: sticky;
     opacity:0.5;
 }
+
 .text-container-rounded{
     border-radius: 20px;
     margin:5px;
     padding:5px;
 }
+
 .msg-container-rounded{
     display:flex;
     justify-content: space-between;
@@ -76,42 +56,42 @@ body{
     margin:5px;
     padding:5px;
 }
+
 .activeC{
     width:50vw;
 }
+
 .footer-container{
     display:flex;
     justify-content: space-around;
     align-items: center;
     width:100vw;
     min-height:100px;
-    margin-top: 150px;
 }
-/* CONTAINER AND DIVS STYLING END*/
 
+/*default elements*/
 
-/* -------- DEFAULT ELEMENTS -------- */
 h1{
     font-size: 50px;
 }
+
 .half-div-container{
 	display:flex;
 	justify-content:space-around;
 	flex-direction:row;
 }
+
 .half-div{
 	display:flex;
 	flex-direction:column;
 	width:45vw;
 }
-/* DEFAULT ELEMENTS END */
 
-
-/* FONT FAMILY */
+/*fonts*/
 .SS{font-family: sans-serif;}
-.EL{font-family: 'elephant';}
+.EL{font-family: elephant;}
 
-/* BACKGROUND COLORS */
+/*background colors*/
 .bg-orange{background-color: orange;}
 .bg-green{background-color: green;}
 .bg-blue{background-color: blue;}
@@ -128,7 +108,7 @@ h1{
 .bg-layer2{background-color: aliceblue;}
 .bg-layer3{background-color: rgb(126, 172, 212);}
 
-/* FOREGROUND COLORS */
+/*foreground colors*/
 .fg-orange{color: orange;}
 .fg-green{color: green;}
 .fg-blue{color: blue;}
@@ -142,7 +122,7 @@ h1{
 .fg-violet{color: violet;}
 .fg-wheat{color: wheat;}
 
-/* -------- BUTTON STYLING -------- */
+/*buttons*/
 .xBtn{
     border:0px;
     background-color: red;
@@ -159,10 +139,7 @@ h1{
     color:white;
     cursor: pointer;
 }
-#save-btn-at-bio{
-    display: block;
-    margin: 10px auto;
-}
+
 .common-btn{
     width:50%;
     border:0px;
@@ -173,14 +150,36 @@ h1{
     font-family: sans-serif;
     padding: 5px;
 }
+
 .common-btn:hover{
     background-color: rgb(163, 163, 163);
     cursor: pointer;
 }
-/* BUTTON STYLING END  */
 
+.rounded{border-radius: 20px;}
 
-/* -------- DASHBOARD STYLING -------- */
+.pad-mar{
+    padding:3px;
+    margin:3px;
+}
+
+.title{
+    font-size: larger;
+}
+
+.no-underline{text-decoration: none;}
+
+.flex{display:flex;}
+.flex-column{flex-direction: column;}
+.flex-center{display:flex;align-items: center;justify-content: center;}
+.center{display:flex;align-items: center;justify-content: center;}
+.pad-bottom-5{padding-bottom:5px;}
+.pad-bottom-10{padding-bottom:10px;}
+.pad-10{padding:10px;}
+
+.fs-40{font-size:40px;}
+.fs-20{font-size:20px;}
+
 .inputText{
     width:100%;
     outline: none;
@@ -191,29 +190,43 @@ h1{
     background-color: beige;
     color:blue;
 }
+
 .rounded-img{
     width:100px;
     height:100px;
     border-radius:10px;
 }
+
 .icon{width:30px;height:30px;}
+
 .entryBox{
     width:90%;
     margin:10px;
 }
+
+.flip-vert{font-size:30px;transform: rotate(180deg);}
+.flip-0{font-size:30px;transform: rotate(180deg);}
+
 #biography-box-container{
     width:98%;
 }
+
 .rich-editor{
     width: 100%;
     padding:5px;
     min-height: 300px;
     outline:none;
 }
-/* DASHBOARD STYLING END */
 
+/*body design*/
 
-/* -------- POPUP BOX DESIGN -------- */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---- POPUP BOX DESIGN ---- */
 .popup{
     display: none;
     position:fixed;
@@ -227,7 +240,7 @@ h1{
 }
 .popup-header{
     position: relative;
-    padding: 5px;
+    padding: 5px 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -260,7 +273,7 @@ h1{
     text-transform: capitalize;
 }
 
-/* -------- ADDITIONAL FEATURES FOR POP UP BOX -------- */
+/* additional_features */
 .additional_features{
     width: 80%;
     margin: auto;
@@ -279,6 +292,8 @@ h1{
     width: 300px;
     height: 68px;
 }
+
+
 .cover{
     position:fixed;
     width:100vw;
@@ -288,9 +303,7 @@ h1{
     background-color: black;
     opacity: 0.6;
 }
-/* POP UP BOX STYLES END */
 
-/* -------- RESPONSIVE -------- */
 @media screen and (max-width:600px){
     .activeC{
         width:90vw;
@@ -308,9 +321,8 @@ h1{
         display:flex;
         justify-content: space-around;
         align-items: center;
-        width:100vw;
+        width:95vw;
         min-height:100px;
-        margin-bottom: 85px;
     }
     .top-bar-container{
         display:flex;
@@ -329,10 +341,7 @@ h1{
         top:10vh;
         left:0;
     }
-}
-
-
-/* -------- ABOUT US PAGE -------- */
-#PrivacyPolicy{
-    margin-top: 50px;
+    body{
+        margin-left: 0px;
+    }
 }

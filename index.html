@@ -4,14 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://fonts.google.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="icon" href="img/fav.png">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav.css">
-    <style>body{overflow-x: hidden;}</style>
 
     <title>Cool-Devs</title>
 </head>
+
+<!--Nav bar-->
+<nav class="navbar SS">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a href="pages/dashboard.html" class="nav-link">
+                <ion-icon name="card-outline"></ion-icon>
+                <span class="link-text">Dashboard</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a id="aboutus-a" href="pages/aboutus.html" class="nav-link">
+                <ion-icon name="information-circle-outline"></ion-icon>
+                <span class="link-text">About Us</span>
+            </a>
+        </li>
+        <li class="nav-item" id="logout-a">
+            <a onclick="signout()" class="nav-link">
+                <ion-icon name="open-outline"></ion-icon>
+                <span class="link-text" style="color: aliceblue;">LogOut</span>
+            </a>
+        </li>
+        <li class="nav-item" id="login-a">
+            <a href="pages/login.html" class="nav-link">
+                <ion-icon name="log-in-outline"></ion-icon>
+                <span class="link-text">LogIn</span>
+            </a>
+        </li>
+        <li class="nav-item" id="signup-a">
+            <a href="pages/signup.html" class="nav-link">
+                <ion-icon name="create-outline"></ion-icon>
+                <span class="link-text">SignUp</span>
+            </a>
+        </li>
+        <!--
+        <li class="nav-item">
+            <a id="logout-a" onclick="signout()" class="nav-link">
+                <ion-icon name="open-outline"></ion-icon>
+                <span class="link-text">LogOut</span>
+            </a>
+        </li>
+        -->
+    </ul>
+</nav>
+
+
 <body>
     <div id="motherDiv">
         <!--
@@ -30,50 +77,8 @@
         </div>
         -->
 
-    <!--Nav bar-->
-    <nav class="navbar">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="pages/dashboard.html" class="nav-link">
-                    <ion-icon name="card-outline"></ion-icon>
-                    <span class="link-text">Dashboard</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a id="aboutus-a" href="pages/aboutus.html" class="nav-link">
-                    <ion-icon name="information-circle-outline"></ion-icon>
-                    <span class="link-text">About Us</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a id="login-a" href="pages/login.html" class="nav-link">
-                    <ion-icon name="log-in-outline"></ion-icon>
-                    <span class="link-text">Login</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a id="signup-a" href="pages/signup.html" class="nav-link">
-                    <ion-icon name="create-outline"></ion-icon>
-                    <span class="link-text">Sign Up</span>
-                </a>
-            </li>
-            <!--
-            <li class="nav-item">
-                <a id="logout-a" onclick="signout()" class="nav-link">
-                    <ion-icon name="open-outline"></ion-icon>
-                    <span class="link-text">LogOut</span>
-                </a>
-            </li>
-            -->
-        </ul>
-    </nav>
-
+    
         <div id="middleDiv">
-
-            <div>
-                <iframe src="pages/musicplayer.html" style="border:0px; width:90vw; margin-left: 5vw; max-height: 50vh;" ></iframe>
-            </div>
-
             <div class="text-container-rounded bg-skyblue SS fg-white activeC">
                 <p>This website is a public website. Click <a href="pages/aboutus.html?o=privacypolicy">here</a> to read our privacy policy</p>
                 <p>You need an account to enter this website.</p>
@@ -86,13 +91,16 @@
         </div>
 		
 		<div class="half-div-container SS">
-			<div class="half-div text-container-rounded bg-layer1 center">
+			<div class="half-div text-container-rounded bg-layer2 center" id="ourProjects">
 				<h2 class="fg-orange ">Our Projects</h2>
+                <!--
 				<a href="https://gardennet.netlify.app/"><img src="img/GardenNet.png" class="rounded-img"><br><label>Garden Net</label></a><br>
 				<a href="https://teenchat.netlify.app/"><img src="img/teenchat.png" class="rounded-img"><br><label>Teen Chat</label></a><br>
-				<a href="https://cooldevs.netlify.app/"><img src="img/fav.png" class="rounded-img" style="margin-left:50px;"><br><label>Cool-Devs (under construction)</label></a><br>
-			</div>
-			<div class="half-div text-container-rounded bg-aqua center">
+				<a href="https://cooldevs.netlify.app/"><img src="img/fav.png" class="rounded-img" style="margin-left:50px;"><br><label>Cool-Devs</label></a><br>
+                <a href="https://dingar.netlify.app/"><img src="https://dingar.netlify.app/img/Gold-coin.svg" class="rounded-img" style="margin-left:50px;"><br><label>Dingar</label></a><br>
+                -->
+            </div>
+			<div class="half-div text-container-rounded bg-layer2 center" style="max-height: 20rem;">
                 <div class="flex"><h2 class="fg-orange">Collaborators on GitHub</h2><img src="img/github.png" class="icon" style="margin-top: 20px; margin-left:5px;"></div>
 				<a href="https://nyankaungset.netlify.app/">NyanKaungSet</a><br>
 				<a href="https://yeaethawe.netlify.app/">YeaeThawe</a><br>
@@ -110,11 +118,10 @@
 </body>
 <!--ionicons-->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-<script src="js/ui.js"></script>
 <script src="js/auth.js"></script>
 <script src="js/index.js"></script>
 </html>

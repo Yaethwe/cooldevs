@@ -137,15 +137,19 @@ function deletePopup3(){
 createBtnAtCC.onclick=()=>{
     if(nameBoxAtCC.value){
         open(`https://teenchat.netlify.app/?new=${btoa(JSON.stringify(
-        {
-            name:nameBoxAtCC.value,
-            owner:{
-                id:btoa(UID),
-                name:UD.name,
-                pass:"c-d",
-            },
-        }
-    ))}`)
+            {
+                name:nameBoxAtCC.value,
+                owner:{
+                    id:btoa(UID),
+                    name:UD.name,
+                    pass:"c-d",
+                },
+            }
+        ))}`,
+        "Teen-Chat",
+        width="400px",
+        height="200px",
+        )
     }else{
         alert("Enter your new chat name")
     }
@@ -198,7 +202,11 @@ function joinTC(chat){
                 img:img2
             }
         }
-    ))}`)
+    ))}`,
+    "Teen-Chat",
+    width="400px",
+    height="200px",
+    )
 }
 
 

@@ -2,19 +2,11 @@ var unLogin = document.querySelector('#un-login')
 var pwdLogin = document.querySelector('#pwd-login')
 var loginBtn = document.querySelector('#login-btn')
 
-loginBtn.onclick = () => {signin(unLogin.value, pwdLogin.value).then(e=>{
-    if(!e){
-        alert('login fail');
-    }
-})}
+loginBtn.onclick = () => {signin(unLogin.value, pwdLogin.value)}
 
 pwdLogin.addEventListener('keyup',e=>{
 	if(e.key==="Enter"){
-		signin(unLogin.value, pwdLogin.value).then(e=>{
-            if(!e){
-                alert('login fail');
-            }
-        })
+		signin(unLogin.value, pwdLogin.value)
 	}
 })
     
