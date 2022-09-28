@@ -1,7 +1,7 @@
 <p  align=center><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=merriweather&duration=7000&center=true&vCenter=true&width=500&height=70&lines=CoolDevs+%3A+Beyond+Better+Together" alt="Typing SVG" /></a></p>
 
 
-<p align=center><img align=center src="img/fav.png"></p><hr>
+<p align=center><a href="https://cooldevs.netlify.app/"><img align=center src="img/fav.png"></a></p><hr>
 
 
 <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"> <img src="https://img.shields.io/github/commit-activity/m/Yaethwe/cooldevs?style=flat"><br>
